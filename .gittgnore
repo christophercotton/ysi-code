@@ -1,0 +1,6 @@
+.DS_Store
+student-files/**/examples
+student-files/**/libraries
+student-files/**/modes
+student-files/**/templates
+student-files/**/tools

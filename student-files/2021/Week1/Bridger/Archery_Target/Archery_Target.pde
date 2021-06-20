@@ -1,0 +1,13 @@
+size(1000,1000);
+fill(255,0,0);
+arc(500, 500, 250, 250, QUARTER_PI, PI +QUARTER_PI + QUARTER_PI + QUARTER_PI, PIE);
+fill(0,0,255);
+ellipse(750,500,250,250);
+rect(625,500,250,120);
+rect(625,620,20,50);
+rect(695,620,20,50);
+rect(775,620,20,50);
+rect(855,620,20,50);
+fill(0,255,0);
+ellipse(695,480,30,30);
+ellipse(785,480,30,30);

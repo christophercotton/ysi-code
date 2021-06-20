@@ -1,0 +1,15 @@
+size(1000,1000);
+fill(#DED3BC);
+ellipse(240,440,70,290);
+fill(#DED3BC);
+ellipse(760,440,70,290);
+fill(#F5EAD2);
+ellipse(500,500,500,530);
+fill(#FFFFFF);
+ellipse(420,440,100,200);
+fill(#FFFFFF);
+ellipse(580,440,100,200);
+fill(#000000);
+ellipse(420,440,50,50);
+fill(#000000);
+ellipse(580,440,50,50);
