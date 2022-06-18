@@ -1,0 +1,17 @@
+size(1000,1000); 
+background(#6ECED1);
+fill(#AF3C3E);
+rect(350,700,300,300);
+fill(#7C694D);
+triangle(350,700,650,700,500,350);
+fill(#487BB7);
+ellipse(500,575,150,150);
+strokeWeight(5);
+stroke(#C6C6C6);
+line(575,575,425,575);
+line(500,500,500,650);
+fill(#A28F71);
+rect(425,750,150,1000);
+strokeWeight(0);
+fill(#624B28);
+ellipse(550,850,25,25);
