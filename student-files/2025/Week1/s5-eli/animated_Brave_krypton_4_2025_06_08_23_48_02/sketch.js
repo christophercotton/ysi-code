@@ -1,0 +1,55 @@
+var offset = 0
+function setup() {
+  createCanvas(800, 800);
+}
+
+function draw() {
+  background(0, 100, 150);
+  offset = offset + 0.1
+  if(offset > TWO_PI){
+    offset = 0
+  }
+  
+  fill('rgb(1,92,1)')
+  rect(388, 390, 33, 1000)
+  rect(150, 150, 33, 1000)
+  flower(400, 400, offset)
+  flower(150, 150, offset + 10)
+  flower(600, 600, offset*2)
+  flower(490, 150, offset*0.1)
+  flower(125, 600, offset*10)
+}
+
+
+function flower(x, y, r) {
+  push()
+  translate(x , y)
+  //rotate(r)
+  fill('rgb(206,202,70)')
+  rect(170 - 195, 150 - 175, 55, 50, 20, 15, 10, 90); 
+  fill('rgb(107,196,107)') 
+  arc(265 - 195, 180 - 175, 80, 69, PI, TWO_PI);
+ arc(130 - 195, 179 - 175, 80 , 69, TWO_PI, PI);
+  arc(203 - 195, 110 - 175, 80 , 80, HALF_PI, PI + HALF_PI, CHORD);
+  arc(197 - 195, 240 - 175, 80, 80, PI + HALF_PI, TWO_PI + HALF_PI, CHORD);
+  
+  
+  fill('rgb(219,178,197)')
+  arc(150 - 195, 127 - 175, 80, 80, QUARTER_PI, PI + QUARTER_PI,);
+  arc(250 - 195, 127 - 175, 80, 80, HALF_PI + QUARTER_PI, QUARTER_PI + PI + HALF_PI);
+  arc(252 - 195, 223 - 175, 80, 80, PI + QUARTER_PI, TWO_PI + QUARTER_PI )
+  arc(151 - 195, 223- 175, 80, 80, -QUARTER_PI, HALF_PI + QUARTER_PI  )
+  
+  
+  fill('black')
+  ellipse(200 - 195, 165- 175, 10, 10);
+  ellipse(209 - 195, 180- 175, 10, 10);
+   ellipse(195 - 195, 180- 175, 10, 10);
+  ellipse(180 - 195, 175- 175, 5, 5)
+  ellipse(210 - 195, 169- 175, 5, 5)
+  ellipse(210 - 195, 195- 175, 5, 5)
+  ellipse(190 - 195, 195- 175, 5, 5)
+  ellipse(190 - 195, 160- 175, 5, 5)
+  ellipse(215 - 195, 160- 175, 5, 5)
+  pop()
+}
